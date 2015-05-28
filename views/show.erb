@@ -1,0 +1,13 @@
+
+<h1>I am show page</h1>
+
+  <% @videos.each do |video| %>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/<%= video['url']%>" frameborder="0" allowfullscreen></iframe>
+  <% end %>
+
+
+
+
+
+
+

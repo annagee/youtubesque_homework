@@ -1,1 +1,18 @@
-<h1>I am homepage</h1>
+<h1>hello there</h1>
+
+ <a href="/home/new">Create Video</a>
+
+
+<ul>
+    <% @video.each do |video| %>
+        <li>
+            <a href="/show/<%= video['id'] %>">
+                <%= video['title'] %>
+                
+            </a>
+        </li>
+    <% end %>
+</ul>
+
+
+  
